@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victor Ndiritu | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0f172a;
+    color:#e2e8f0;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#020617;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+
+header{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.profile-pic{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #38bdf8;
+    box-shadow:0px 0px 25px rgba(56,189,248,0.5);
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header span{
+    color:#38bdf8;
+}
+
+header p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* SECTION */
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:30px;
+    font-size:2rem;
+    color:#38bdf8;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    width:280px;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav div{
+        margin-top:10px;
+    }
+
+    header h1{
+        font-size:2.2rem;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Victor.dev</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<header>
+
+<img src="victor.jpg" alt="Victor" class="profile-pic">
+
+<h1>Hi, I'm <span>Victor Ndiritu</span></h1>
+
+<p>
+Aspiring Software Developer | IT Student | Building Real Projects
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</header>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
+<h2>About Me</h2>
+
+<p style="max-width:700px; margin:auto;">
+
+I’m an IT student based in Nairobi with a strong interest in software development,
+problem solving, and building real-world applications. I’m currently developing my
+skills in programming, networking, and version control while working towards becoming
+a professional software engineer and tech entrepreneur.
+
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="section" id="skills">
+
+<h2>Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>HTML & CSS</h3>
+<p>Building responsive and modern websites.</p>
+</div>
+
+<div class="card">
+<h3>C Programming</h3>
+<p>Understanding programming logic and problem solving.</p>
+</div>
+
+<div class="card">
+<h3>Git & GitHub</h3>
+<p>Managing code and collaborating on projects.</p>
+</div>
+
+<div class="card">
+<h3>Networking</h3>
+<p>Basic networking and IT systems knowledge.</p>
+</div>
+
+<div class="card">
+<h3>Java Basics</h3>
+<p>Learning object-oriented programming concepts.</p>
+</div>
+
+<div class="card">
+<h3>Problem Solving</h3>
+<p>Analytical thinking and debugging skills.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="section" id="projects">
+
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Get Well Valerie</h3>
+
+<p>
+A project created to practice web development and sharing code using GitHub.
+</p>
+
+<br>
+
+<a href="https://github.com/ndiritu7/Get-well-Valerie" target="_blank" class="btn">
+View Code
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Portfolio Website</h3>
+
+<p>
+My personal portfolio website showcasing my skills, projects, and career journey.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Upcoming Projects</h3>
+
+<p>
+Currently working on more projects to strengthen my development skills and portfolio.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: vndiritu62@gmail.com</p>
+
+<br>
+
+<a href="https://www.linkedin.com/in/victor-ndiritu-885449407" target="_blank" class="btn">
+LinkedIn
+</a>
+
+<a href="https://github.com/ndiritu7" target="_blank" class="btn">
+GitHub
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Victor Ndiritu | Built with passion 💻</p>
+
+</footer>
+
+</body>
+</html>
